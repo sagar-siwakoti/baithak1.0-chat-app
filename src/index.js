@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { initializeApp } from "firebase";
-import StateProvider from "./StateProvider";
+import reducer,{initialState} from "./Reducer/reducer";
+import {StateProvider} from "./StateProvider";
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>

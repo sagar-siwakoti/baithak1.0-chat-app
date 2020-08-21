@@ -1,26 +1,45 @@
-.login{
-    background-color: #f8f8f8;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
+.login {
+  background-color: #f8f8f8;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
 }
-.login__container{
-    padding: 100px;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
-    0 1px 3px rgba(0,0,0,0.12);
+.login__container {
+  padding: 100px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
 }
-.login__container>img{
-    object-fit: contain;
-    height: 100px;
-    margin-bottom:40px;
+.login__container > img {
+  object-fit: contain;
+  height: 100px;
+  margin-bottom: 40px;
 }
-.login__container>button{
-    margin-top: 50px;
-    text-transform: inherit !important;
-    background-color: #B19538 !important;
-    color: white;
+.login__container > button {
+  margin-top: 50px;
+  text-transform: inherit !important;
+  background-color: #b19538 !important;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.login__container > img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.login__footer {
+  color: gray;
+}
+.login__container > button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(177, 149, 56, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
